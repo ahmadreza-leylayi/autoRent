@@ -1,0 +1,231 @@
+@import "tailwindcss";
+
+@theme {
+--color-primary: #194BF0;
+--color-secondary:#FDB713;
+--color-white2:#F9F9F9;
+--font-Estedad-Medium:Estedad-Medium;
+--font-Estedad-Bold:Estedad-Bold;
+--font-Estedad-Light:Estedad-Light;
+--font-Estedad-Regular:Estedad-Regular;
+--font-Estedad-Thin:Estedad-Thin;
+--font-Estedad-Black:Estedad-Black;
+--font-Estedad-ExtraBold:Estedad-ExtraBold;
+--font-Estedad-ExtraLight:Estedad-ExtraLight;
+--font-Estedad-SemiBold:Estedad-SemiBold;
+
+  }
+
+@font-face {
+    font-family: 'Estedad-Medium';
+    src: url('../fonts/Estedad-Medium.ttf');
+}
+@font-face {
+    font-family: 'Estedad-Bold';
+    src: url('../fonts/Estedad-Bold.ttf');
+}
+@font-face {
+    font-family: 'Estedad-Light';
+    src: url('../fonts/Estedad-Light.ttf');
+}
+@font-face {
+    font-family: 'Estedad-Regular';
+    src: url('../fonts/Estedad-Regular.ttf');
+}
+@font-face {
+    font-family: 'Estedad-Thin';
+    src: url('../fonts/Estedad-Thin.ttf');
+}
+@font-face {
+    font-family: 'Estedad-Black';
+    src: url('../fonts/Estedad-Black.ttf');
+}
+@font-face {
+    font-family: 'Estedad-ExtraBold';
+    src: url('../fonts/Estedad-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Estedad-ExtraLight';
+    src: url('../fonts/Estedad-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Estedad-SemiBold';
+    src: url('../fonts/Estedad-SemiBold.ttf');
+}
+  
+
+.wrapper {
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 683px;
+}
+
+.active{
+
+    background-color: #194BF0;
+    color: #FFFFFF ;
+
+}
+.active-secondary{
+    background-color:#FDB713 ;
+}
+
+**, * {
+    box-sizing: border-box;
+}
+
+.why-auto-rent {
+    background-image: url("../images/car-img-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+/* login page  */
+
+
+.number-input{
+    direction: ltr;
+    
+}
+
+.rules-checkbox :checked{
+    background-color: red;
+
+}
+
+.verification-num {
+    direction: ltr;
+}
+/* end login  */
+
+/* cars list page  */
+
+.cars-list-wrapper {
+    background-image: url("../images/pages/Cars-list/page-screen.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 440px;
+}
+
+
+
+/* range slider */
+
+input[type="range"] {
+    -webkit-appearance: none; /* برای کروم و سافاری */
+    appearance: none;
+  }
+  /* ظاهر دایره‌ی قابل کشیدن (Thumb) در کروم/سافاری */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: white;
+    border: 0.5px solid #9A9A9A; /* یا از متغیر Tailwind دلخواهتان */
+    width: 16px;
+    height: 16px;
+    border-radius: 9999px; /* گرد کردن کامل */
+    cursor: pointer;
+    margin-top: -7px; /* برای هم‌تراز شدن با خط اسلایدر */
+    z-index: 10;
+  }
+  /* ظاهر دایره‌ی قابل کشیدن (Thumb) در فایرفاکس */
+  input[type="range"]::-moz-range-thumb {
+    background: white;
+    border: 0.5px solid #9A9A9A;
+    width: 16px;
+    height: 16px;
+    border-radius: 9999px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  /* برای کل اسلایدر pointer-events: none */
+input[type="range"] {
+    pointer-events: none;
+    
+  }
+  
+  /* اما برای دایره‌ی قابل کشیدن، pointer-events را فعال می‌کنیم */
+  input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    z-index: 10;
+  }
+  input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
+    z-index: 10;
+  }
+  /* تنظیم z-index برای خط آبی (sliderRange) */
+#slider-range {
+    z-index: 1; /* مقدار کمتر برای قرار گرفتن در پشت */
+  }
+
+
+  /* BLOGS  */
+
+  .blogs-wrapper {
+    background-image: url("../images/pages/blogs/header-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+
+.comment{
+    direction: rtl;
+}
+
+
+/* Contact  */
+
+.contact-wrapper {
+    background-image: url("../images/pages/about-us/header-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* About Us  */
+
+
+.about-us-wrapper {
+    background-image: url("../images/pages/about-us-2/page-screen.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* questions  */
+
+
+.questions-wrapper {
+    background-image: url("../images/pages/questions/page-screen.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+/* Rules  */
+.rules-wrapper {
+    background-image: url("../images/pages/rules/page-screen.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}

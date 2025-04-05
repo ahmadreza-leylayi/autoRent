@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/input.css">
+    <title>Login</title>
+</head>
+
+<body class="w-full min-h-screen bg-[#D7D7D7] flex justify-center items-center">
+    <div class="w-[1016px] h-[856px] mx-auto flex">
+        <div class="w-full h-full rounded-tr-[8px] rounded-br-[8px] bg-white flex flex-col px-[53px]">
+            <a href="../../index.html" class="">
+                <img src="../images/pages/login/logo.png" alt="" class=" mx-auto mt-8">
+            </a>
+            <div class="mx-auto mt-[233px] flex flex-col">
+                <span class="text-[20px] text-[#494949] font-Estedad-Bold mx-auto">ورود یا ثبت‌نام</span>
+                <span class=" text-[14px] text-[#494949] font-Estedad-Regular mx-auto mt-[30px] ">کد تایید به شماره
+                    موبایلی که وارد می‌کنید، ارسال خواهد شد.</span>
+            </div>
+
+            <!-- input & rules  -->
+
+            <div class="input-rules flex flex-col mx-auto mt-[16px] w-[536px] gap-8  ">
+
+                <form action="" class="w-full">
+                    <div class="number-wrapper w-full py-[2px] px-2 gap-2 flex items-center relative border-[1px] border-[#C2C2C2] rounded-[8px]">
+                        <input type="tel" placeholder="9*********" pattern="9\d{9}" maxlength="10" class="number-input placeholder:pl-[3px] placeholder:font-Estedad-Medium placeholder:left-0 placeholder:absolute outline-0 flex w-full h-[52px] rounded-[8px] justify-end pl-[3px] text-[#494949] text-[16px] font-Estedad-Regular" required>
+                        <div class="border-[1px] border-[#C2C2C2] h-[24px]"></div>
+                        <span class="text-[14px] text-black font-Estedad-Regular">98+</span>
+                        <img src="../images/pages/login/Flag.png" alt="" class="w-[24px] h-[24px]">
+                    </div>
+                    <span class="error text-red-500 text-[14px] font-Estedad-Regular hidden mt-5" ></span>
+                </form>
+
+                <div class="w-full flex items-center gap-3">
+                    <input type="checkbox" name="rules" id="checkbox" class="checked:bg-amber-400 rules-checkbox w-[24px] h-[24px]">
+                    <label for="rules" class="text-[14px] text-[#494949] font-Estedad-Regular">
+                        با ورود و ثبت‌نام در سایت، با
+                        <a href="#" class="text-primary font-Estedad-Regular ">
+                            قوانین اتورنت
+
+                        </a>
+                        موافقت می‌کنم.
+                    </label>
+                </div>
+
+            </div>
+
+            <!-- enter Verification code region hidden-->
+
+            <div class="verification-code w-[536px] mx-auto mt-[16px] flex flex-col items-center gap-[8px] hidden">
+                <div class=" vervication-num w-full flex items-center justify-center gap-4">
+                    <input type="text" class="verification-number outline-0 flex w-[54px] h-[54px] px-[7px] py-[7px] border-[1px] border-[#C2C2C2] rounded-[10px] text-center text-[16px] text-black font-Estedad-Bold justify-center items-center" maxlength="1">
+                    <input type="text" class="verification-number outline-0 flex w-[54px] h-[54px] px-[7px] py-[7px] border-[1px] border-[#C2C2C2] rounded-[10px] text-center text-[16px] text-black font-Estedad-Bold justify-center items-center" maxlength="1">
+                    <input type="text" class="verification-number outline-0 flex w-[54px] h-[54px] px-[7px] py-[7px] border-[1px] border-[#C2C2C2] rounded-[10px] text-center text-[16px] text-black font-Estedad-Bold justify-center items-center" maxlength="1">
+                    <input type="text" class="verification-number outline-0 flex w-[54px] h-[54px] px-[7px] py-[7px] border-[1px] border-[#C2C2C2] rounded-[10px] text-center text-[16px] text-black font-Estedad-Bold justify-center items-center" maxlength="1">
+                    <input type="text" class="verification-number outline-0 flex w-[54px] h-[54px] px-[7px] py-[7px] border-[1px] border-[#C2C2C2] rounded-[10px] text-center text-[16px] text-black font-Estedad-Bold justify-center items-center" maxlength="1">
+                </div>
+
+                <div class="w-full h-full flex gap-8 justify-between">
+                    <div class="h-[24px] flex items-center gap-[2px]">
+                        <img src="../images/pages/login/clock.png" alt="" class="w-[16px] h-[16px] ">
+                        <span class="timer text-[14px] text-primary font-Estedad-Regular">۱:۵۹</span>
+                        <span class="text-[14px] text-[#868686] font-Estedad-Regular">تا دریافت مجدد کد</span>
+                    </div>
+                    <div class="h-[24px] flex items-center gap-[2px]">
+                        <span class="text-[14px] text-primary font-Estedad-Regular">ویرایش شماره موبایل</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- end region -->
+
+
+
+
+        
+                <button
+                    class="submit-button w-[556px] h-[48px] flex mx-auto items-center justify-center mt-[14px] gap-[8px] text-[#C2C2C2] bg-[#F3F3F3] px-[16px] py-1 font-Estedad-Regular rounded-[8px]">
+
+                    تایید و ادامه
+                </button>
+
+        
+
+
+        </div>
+
+        <div class="w-full h-full rounded-tl-[16px] rounded-bl-[16px]">
+            <img src="../images/pages/login/54eac71253b001328338094d1ee42eb8.png" alt="" class="w-[356px] h-full object-cover">
+        </div>
+
+
+
+    </div>
+
+
+    <script src="./login.js"></script>
+</body>
+
+
+</html>
+
